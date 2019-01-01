@@ -1,0 +1,63 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+function agevalue(num) 
+{ 
+	if(num<18) 
+{ 
+		alert('You must be 18 or older to continue'); 
+		document.getElementById('Sub').disabled=true; 
+} 
+else 
+{ 
+		document.getElementById('Sub').disabled=false; 
+} 
+} 
+</script>
+
+</head>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="update.css">
+
+	<font color="Indigo" >
+<center> <h2> <b> UPDATE STUDENT INFORMATION <b> </h2> </center> 
+	</font>
+
+	<body background = "a2.jpg">
+	
+		<form action = "update.php">
+		<center>
+	
+		<div id="den">
+<center> 	<input type = "number" name="Uid" placeholder="Enter Id to Update Record" required > </center> <br>
+	   	<center>		   	 <input type = "text" name="name" placeholder="Enter Name" required > </center> <br> 
+			<center>	<input type = "number" name="age" id="num" placeholder="Enter Age" onchange="agevalue(this.value);" required > </center> <br>
+		<center>	<input type = "email" name="EmailId" placeholder="Enter Email Id" required > </center> <br>   
+		
+		
+			
+			
+			<br> <center> <input type="submit" id="sub" class="btn btn-primary"  value="Update" /> </center>
+				
+		</div>
+			</br>
+			</br>
+			</center>
+			</form>
+			<button type="button" class="btn btn-success" onclick="window.location.href='home.html'">Click here to go Home</button>
+			
+		
+		
+	</body>
+</html>		

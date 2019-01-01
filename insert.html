@@ -1,0 +1,90 @@
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+		function demo(){
+			
+			var name=document.getElementById("name").value;
+			var num=document.getElementById("num").value;
+			var eid=document.getElementById("eid").value;
+			
+			var word='name='+ name + '&num='+ num + '&eid='+ eid;
+			
+			$.ajax({
+				type:"post",
+				url: "insert.php",
+				data:word,
+				cache:false,
+				success:functin(html){
+							$('#sol').html(html);
+					}
+			});
+			
+			return false;
+		}
+
+</script>
+<script>
+function agevalue(num) 
+{ 
+	if(num<18) 
+{ 
+		alert('You must be 18 or older to continue'); 
+		document.getElementById('sub').disabled=true; 
+} 
+else 
+{ 
+		document.getElementById('sub').disabled=false; 
+} 
+} 
+ 
+
+</script>
+
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+    <link rel="stylesheet" type="text/css" href="insert.css">
+	
+	<font color="Indigo" >
+<center> <h3> <b>  ENTER STUDENT INFORMATION <b> </h3> </center> 
+	</font>
+
+	<body background = "a2.jpg">
+	
+		<form align="center" action = "insert.php">
+		<center>
+		<br>
+		
+		<div  id="sol">
+		<table>
+		
+			<center> <input type = "text" 	name="name" size="20" id="name" placeholder="Enter Name"  required > </center> <br>
+			<center> <input type = "number" name="age" size="20"  id="num" placeholder="Enter Age"  onchange="agevalue(this.value);" required >  </center> <br>
+			<center> <input type = "email" name="EmailId" size="20" id="eid" placeholder="Enter Email Id" required >  </center>  <br>  
+		
+		
+		
+			<br> <center>  <input type="submit" class="btn btn-primary" value="submit" id="sub" onclick="return demo()" >   </center> 
+		
+		</table>
+		</div>
+		</center>
+		</br>
+		</br>
+		
+		</form>
+		
+		<button type="button"  id="abc" class="btn btn-success" onclick="window.location.href='home.html'">Click here to go Home</button>		
+		
+		
+	</body>
+</html>		

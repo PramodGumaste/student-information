@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script language="javascript" type="text/javascript">
+    window.history.forward();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>   
+$(document).ready(function(){  
+    $("#tag").click(function(){  
+        $("#exe").slideToggle("slow");  
+    });  
+});  
+</script>  
+ <style>   
+#exe, #tag {  
+    padding: 5px;  
+    text-align: center;  
+    background-color: #A8994F ;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display:none;  
+}  
+</style>  
+	
+	<font color="red">
+		<center>	<h1> <b> Student Information Management System <b> </h1> </center>  
+	</font>
+	
+	
+	
+  <title>Student Details </title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body background="bg3.jpg">
+
+<div class="navbar navbar-inverse">
+  
+ <center>
+  <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='insert.html'">Enter Details</button>
+  <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='search.html'">Search Details</button>
+  <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='delete.html'">Delete Student</button>
+  <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='update.html'">Update Details</button>
+  <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='display.html'">Display Details</button>
+  <button type="button" class="btn btn-danger pull-right btn-lg" onclick="window.location.href='login.html'">Logout</button>
+  
+ </center>   
+  
+  
+</div>
+	
+	<marquee bgcolor="orange"> This is a student information management system designed for administrator use only</marquee>
+	</br></br>
+	<img src="student1.jpg" height="300" width="350" style="float:right" > 
+	
+	<font color="cyan" size="5">
+	<br>
+	
+	<p align="left"> <span class="glyphicon glyphicon-hand-right"> This is a project for "student information management system".<br>
+		<br>	<span class="glyphicon glyphicon-hand-right">  It basic information about the student details with simple user interface.<br>
+		<br> <span class="glyphicon glyphicon-hand-right"> A database is also designed to maintain records for each transaction. <br> 
+															
+		<br> <span class="glyphicon glyphicon-hand-right"> This application includes various features like inserting student details <br> 
+				<br> 	<span class="glyphicon glyphicon-hand-right"> Search student details,updating the available records. <br>
+				<br>	<span class="glyphicon glyphicon-hand-right"> Deleting the record, Display all the records available in the database.<br>
+	</p> 
+	
+	</font>
+
+		
+		  
+	</br></br></br></br>
+	<br><br>
+	
+	<center>	<footer id= "foot">
+		<div id="tag"><b> Click here for more Information  </div>  
+<div id="exe">Email Id:pramodfs143@gmail.com  <br>
+
+				Contact No:9739592023</div> 
+		</footer>
+		
+	
+	</center>
+</body>
+</html>
